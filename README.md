@@ -63,7 +63,7 @@ local packager = require(ReplicatedStorage.Packager)
 -- Auto mode (no schema):
 local buf = packager.pack({
   CameraCFrame = workspace.CurrentCamera.CFrame,
-  Name = "Matteo",
+  Name = "UserName",
   HP = 87,
 })
 
