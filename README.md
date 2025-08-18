@@ -138,9 +138,9 @@ local obj = packager.unpack(buf, Player)
 * `S.vec2()` — `Vector2` (q16)
 * `S.cframe()` — `CFrame` (pos q16 + rot q16)
 * `S.color()` — `Color3` (rgb565)
-* `S.udim2()` - `UDim2` (q16)
-* `s.datetime()` - `DateTime` (u32)
-* `s.enum()` - `EnumItem` (string)
+* `S.udim2()` — `UDim2` (q16)
+* `s.datetime()` — `DateTime` (u32)
+* `s.enum()` — `EnumItem` (string)
 * `S.array(inner)` — arrays of `inner`
 * `S.struct({ field = SchemaType, ... })` — object with deterministic field order
 
