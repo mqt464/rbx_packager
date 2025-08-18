@@ -170,7 +170,7 @@ local out = packager.unpack(buf, { profile = "datastore" })
 ```lua
 -- Server
 local packager = require(ReplicatedStorage.Packager)
-local EVT: RemoteEvent = ReplicatedStorage:WaitForChild("PayloadEvent")
+local EVT: RemoteEvent = ReplicatedStorage:WaitForChild("RemoteEvent")
 
 local snapshot = {
   Tick = workspace:GetServerTimeNow(),
