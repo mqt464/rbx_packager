@@ -135,8 +135,12 @@ local obj = packager.unpack(buf, Player)
 * `S.bool()` — boolean
 * `S.str()` — string (varint length + bytes)
 * `S.vec3()` — `Vector3` (q16)
+* `S.vec2()` — `Vector2` (q16)
 * `S.cframe()` — `CFrame` (pos q16 + rot q16)
 * `S.color()` — `Color3` (rgb565)
+* `S.udim2()` - `UDim2` (q16)
+* `s.datetime()` - `DateTime` (u32)
+* `s.enum()` - `EnumItem` (string)
 * `S.array(inner)` — arrays of `inner`
 * `S.struct({ field = SchemaType, ... })` — object with deterministic field order
 
@@ -226,7 +230,6 @@ local roundtrip = packager.unpack(buffer.fromstring(raw))
 
 ## Limitations
 
-* Only common primitives supported in MVP (add more as needed: `Vector2`, `UDim2`, `Enum`, etc.)
 * Rotation uses `ToOrientation()` quantization (Euler) — not the smallest representation; a quaternion codec can be added.
 * Auto mode’s wire format is slightly larger than schema mode (due to tags/dictionary).
 * No built-in compression step (LZ4-lite) yet; add on top if needed for giant blobs.
