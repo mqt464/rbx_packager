@@ -52,8 +52,7 @@
 
 1. Create a **ModuleScript** named `Packager` under `ReplicatedStorage` (or anywhere you prefer).
 2. Paste the contents of **Packager.lua (Strict Rewrite)** into it.
-3. (Optional) Add `Packager` to a package manager (e.g., Wally) in your own project structure.
-
+   
 ---
 
 ## Quick Start
